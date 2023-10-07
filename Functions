@@ -2,9 +2,9 @@ def greeting(name, department):
     print("Welcome " + name)
     print("You are part of " + department)
     
-greeting("hasibe", "music")// Difference from Javascript, we should use arguments in paranthesis. Without them, it doesnt work
-//result is = Welcome hasibe
-//You are part of music.
+greeting("hasibe", "music")# Difference from Javascript, we should use arguments in paranthesis. Without them, it doesnt work
+#result is = Welcome hasibe
+#You are part of music.
 
 
 def convert(seconds):
