@@ -1,0 +1,17 @@
+def greeting(name, department):
+    print("Welcome " + name)
+    print("You are part of " + department)
+    
+greeting("hasibe", "music")// Difference from Javascript, we should use arguments in paranthesis. Without them, it doesnt work
+//result is = Welcome hasibe
+//You are part of music.
+
+
+def convert(seconds):
+    hours = seconds // 3600
+    minutes = (seconds - hours*3600) //60 
+    remaining_seconds = seconds - hours *3600 - minutes*60 
+    return "hours :" + str(hours), "minutes :" + str(minutes), "remaining_seconds :" + str(remaining_seconds)
+
+result = convert(10000)
+print(result)= ('hours: 2', 'minutes: 46', 'remaining_seconds: 40')
