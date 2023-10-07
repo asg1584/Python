@@ -3,7 +3,17 @@
 2- It must begin with letter. It can not begin with number. "1_is_a_variable" is not suitible.
 3- name, Name and NAME are different and suitible variables.*/ 
 
-length = 20
-width = 10
-area = length*width
-print(area)// Result is 200
+# The following 5 lines assign strings to a list of variables.
+salutation = "Dr."
+first_name = "Prisha"
+middle_name = "Jai"
+last_name = "Agarwal"
+suffix = "Ph.D."
+ 
+print(salutation + " " + first_name + " " + middle_name + " " + last_name + ", " + suffix) 
+# The comma as a string ", " adds the conventional use of a comma plus a 
+# space to separate the last name from the suffix.
+ 
+# Alternatively, you could use commas in place of the + connector:
+print(salutation, first_name, middle_name, last_name,",", suffix)
+# However, you will find that this produces a space before a comma within a string.
