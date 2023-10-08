@@ -1,0 +1,9 @@
+#Lucky number is like random number. Every time it gives us number in a random sequence. 
+
+def lucky_number(name):
+    number = len(name) * 9
+    print("Hello " + name + " Your lucky number is " + str(number))
+
+lucky_number("Cameron") #36
+lucky_number("karen") #81
+lucky_number("michel") # 72. Every time it gives us different numbers
