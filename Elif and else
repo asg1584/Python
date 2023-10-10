@@ -1,0 +1,13 @@
+# In our comparisons, we use if, elif and else. The unique difference of elif is, we can not use elif without if. We must use it, after if.
+# else meaning is all situations without elif and if.
+
+def hint_username(name):
+    if len(name) < 3 : # in case we give username for users, we dictate some rules.
+        print("Invalid username. Username must be at least 3 characters long")
+    elif len(name) > 15:# we dictate another rule.
+        print("Invalid username. Username must be less than 15characters long ")
+    else : # Without these 2 rules, all of the situation are suitable for us.
+        print("valid name")
+        
+user1 = hint_username("dafsdafadsdvagaadsggasgasgsadgsadgsdaagasdgsagaf") #Invalid username. Username must be less than 15characters long 
+
