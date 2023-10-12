@@ -1,1 +1,41 @@
 # We use while loop until a condition is not suitable.
+
+
+def attempts(n):
+    x = 1
+    while x <= n:
+        print("Attempt" + str(x))
+        x += 1
+    print("it is same as" + str(n))
+        
+attempts(5)
+
+""" The result is 
+Attempt1
+Attempt2
+Attempt3
+Attempt4
+Attempt5
+it is same as
+This is the original result. But if we can not write line 9 with correct indentation we get the result:
+
+def attempts(n):
+    x = 1
+    while x <= n:
+        print("Attempt" + str(x))
+        x += 1
+        print("it is same as" + str(n))
+        
+attempts(5)
+
+Attempt1
+it is same as5
+Attempt2
+it is same as5
+Attempt3
+it is same as5
+Attempt4
+it is same as5
+Attempt5
+it is same as5
+So that indentation is very important"""
