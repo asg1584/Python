@@ -1,0 +1,25 @@
+# We use for loop for calculating sth. in a given list or parameter. We can have a list, or sth different. It helps us to function in our direction.
+product = 1
+for n in range(1, 10):#We use 2 parameter to specify the first and last parameter. 
+  product = product * n
+
+print(product) # 362880
+
+def fahreneit_to_celcius(x):
+  return(x-32)*5/9
+
+for x in range (0, 101, 10):# First parameter, next number after last parameter, sequence size.
+  print(x, fahreneit_to_celcius(x))
+0 -17.77777777777778
+10 -12.222222222222221
+20 -6.666666666666667
+30 -1.1111111111111112
+40 4.444444444444445
+50 10.0
+60 15.555555555555555
+70 21.11111111111111
+80 26.666666666666668
+90 32.22222222222222
+100 37.77777777777778
+#use "for" Loops when there's a sequence of elements that you want to iterate.
+#use while Loops when you want to repeat an action until a condition change.
