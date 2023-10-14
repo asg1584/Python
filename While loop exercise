@@ -1,0 +1,18 @@
+import random
+
+guessing_number = random.randint(1, 100)//With "randint" function, we can find a integer between paranthesis.
+guessing_times = 0
+
+print("Please select a number between 1-100")
+
+while True:
+    guessing_times += 1
+    guess = int(input("Please select a number: "))
+
+    if guess < guessing_number:
+        print("Please give a bigger number.")
+    elif guess > guessing_number:
+        print("Please give a smaller number.")
+    else:
+        print(f"Congrats! You have found {guessing_number} in {guessing_times} tries.")
+        break
