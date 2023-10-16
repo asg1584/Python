@@ -1,0 +1,29 @@
+name = "Jaylen"
+print(name[2]) #We took the 3rd character. "y"
+
+name2 = "dsfkaj lkas alkgjalskdg jaslkdg sdg"
+print(name2[-2])## We took the character before the last character. "d"
+
+print(name2[3:7])#We used slice method to take the characters between 3 to 6.
+
+fruit = "pineapple"
+fruit[:4]# That means slice the all characters to 5th character."pine"
+fruit[4:]# That means slice the all characters from 5th character."apple"
+
+
+message = "A kong script is not for everyone."
+#message[2]="l"# Strings are immutable in Python. So that we must make a new string and we change it.
+
+new_message = message[:2] + "l" + message[3:]
+print(new_message)
+
+# Another way to edit the string is defining the string another time.
+message = "This is new message"
+print(message)#This is new message
+
+pets = "cats & dogs"
+print(pets.index("&"))#5. It finds the first character of repeated character. Because it gives just 1 reply
+
+print("Dragons" in pets)#False
+print("cats" in pets)#True
+
