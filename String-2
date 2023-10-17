@@ -1,0 +1,16 @@
+variable1= "We can not change it"
+print(variable1.isnumeric())#False
+
+variable2 = "To make it together, we use join method"
+
+variable3 = " ".join([variable1, variable2])
+print(variable3)#We can not change it To make it together, we use join method
+
+variable3 = ",".join([variable1, variable2])# We can not change it,To make it together, we use join method
+
+variable4 = variable3.split()
+print(variable4)#['We', 'can', 'not', 'change', 'it,To', 'make', 'it', 'together,', 'we', 'use', 'join', 'method']
+
+name = "Manny"
+number = len(name)*3
+print("Hello {}, your favourite number is {} ".format(name, number))# It can be reversed. We defined which variables must be used for which curly bracets.
