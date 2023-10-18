@@ -1,0 +1,40 @@
+fruits = ["kiwi", "apple", "cherry"]
+fruits.append("watermelon")
+print(fruits) #['kiwi', 'apple', 'cherry', 'watermelon']
+
+fruits.insert(0, "orange")
+print(fruits)#['orange', 'kiwi', 'apple', 'cherry', 'watermelon']
+
+fruits.insert(25, "orange")
+print(fruits)#Position does not matter. If it is more than the last number, it adds to the end. 
+
+fruits.remove("orange")
+print(fruits)# In case there is more than one this item, it removes first one.
+
+fruits.pop(2)# This method remotes 3rd item in list.
+
+fruits[3] ="lemon" # This method changes the 4th item as "lemon".
+
+Tupples
+
+for animal in animals:
+    chars += len(animal)
+     
+print ("Total characters : {} Avarage length:{} ".format(chars, chars / len(animals))) #Total characters : 20 Avarage length:5.0 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
