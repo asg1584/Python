@@ -1,16 +1,30 @@
 variable1= "We can not change it"
 print(variable1.isnumeric())#False
-
 variable2 = "To make it together, we use join method"
 
-variable3 = " ".join([variable1, variable2])
-print(variable3)#We can not change it To make it together, we use join method
-
-variable3 = ",".join([variable1, variable2])# We can not change it,To make it together, we use join method
+variable3 = ",".join([variable1, variable2])
+print(variable3)#We can not change it Join method
 
 variable4 = variable3.split()
 print(variable4)#['We', 'can', 'not', 'change', 'it,To', 'make', 'it', 'together,', 'we', 'use', 'join', 'method']
 
+
 name = "Manny"
 number = len(name)*3
-print("Hello {}, your favourite number is {} ".format(name, number))# It can be reversed. We defined which variables must be used for which curly bracets.
+#print("Hello {}, your favourite number is {} ".format(name, number))
+
+print("Hello {name}, your favourite number is {number} ")
+
+amount = 1
+measurement_unit = " kg"
+product = " apple"
+
+print("{}{}{}".format(amount, measurement_unit, product ))
+
+
+price = 7.5
+with_tax = price * 1.09
+print(with_tax)#8.175 But there is not 0.005 dollar. So that we use 2 digits to write.
+
+print("Base price: ${:.2f}. With Tax : ${:.2f}".format(price, with_tax)) #Base price: $7.50. With Tax : $8.18 ":.2f means, it is written just 2 digits after the point."
+
