@@ -1,0 +1,43 @@
+
+x = 5 # initialize the variable with a value.
+while x < 10:
+    print(x)#It take the x value as 5 and print on screen
+    x = x + 1 # After printing process, this line changes the value of variable. We use a code to change the value of variable
+
+
+
+def count_down(start_number):
+  start_number = current
+  while (current >= 0):
+    print(current)
+    current -= 1
+  print("Zero!")
+
+count_down(3)
+
+def count_down(start_number):
+    current = start_number  # current value must start with start number
+    while current > 0:
+        print(current)
+        current -= 1
+    print("Zero!")
+
+count_down(3)
+
+
+def divisor_project(number):
+    divisor = 1
+    divisors = []
+
+    if number > 1:
+        while number > divisor:
+            if number % divisor == 0:
+                divisors.append(divisor)
+            divisor += 1
+    else:
+        print("There is no divisor")
+    print(divisors)
+
+divisor_project(12)
+
+
